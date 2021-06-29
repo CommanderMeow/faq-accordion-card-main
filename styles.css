@@ -1,0 +1,141 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+ position: fixed;
+bottom: 0;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+  margin: 0;
+  font-size: 12px;
+  color: hsl(240, 6%, 50%);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+}
+label img {
+  height: max-content;
+}
+h1 {
+  font-size: 2.7em;
+  color: hsl(238, 29%, 16%);
+  margin-top: 12%;
+  margin-bottom: 5%;
+}
+
+h3 {
+  font-weight: 400;
+}
+h3:hover {
+  color: hsl(14, 88%, 65%);
+}
+p{
+  line-height: 1.5;
+  margin: 0;
+}
+/* Flex box */
+.flex {
+  display: flex;
+}
+
+.flex-a-center {
+  align-items: center;
+}
+ .flex-a-start {
+   align-items: flex-start;
+ }
+.flex-center {
+  justify-content: center;
+}
+
+.flex-start{
+  justify-content: flex-start;
+}
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-basis-50 {
+  flex-basis: 50%;
+}
+
+/*Main CSS*/
+
+.main-card {
+ border-radius: 35px;
+ width: 1000px;
+ min-height:550px;
+ background-color: white;
+ background-image: url(images/bg-pattern-desktop.svg);
+ background-size: 800px;
+ background-position:-400px -150px;
+ background-repeat: no-repeat;
+}
+
+@media only screen and (max-width:1100px) {
+  .main-card{
+    width:800px;
+
+  }
+}
+.image-section {
+position: relative;
+
+}
+.image-border-div {
+  overflow: hidden;
+}
+.box-img{
+  position: absolute;
+  left:-90px;
+  top: 240px;
+}
+.desktop-img {
+margin-left: -75px;
+margin-top: 100px;
+width: 95%;
+}
+.faq-section {
+  margin-bottom: 40px;
+}
+.accordion-input {
+  display: none;
+}
+
+ .faq-question label {
+   width:80%;
+   font-weight: 400;
+   font-size: 1em;
+   border-bottom-style: solid;
+   border-color: hsl(240, 5%, 91%);
+   border-width: 2px;
+   padding: 6px 0 6px;
+ }
+
+ .faq-content {
+   max-height: 0;
+   overflow: hidden;
+   width: 80%;
+ }
+
+ .accordion-input:checked ~ .faq-content{
+   max-height: 200px;
+ }
+
+ .accordion-input:checked ~ label img {
+   transform:rotate(180deg);
+ }
+
+.accordion-input:checked ~ label h3 {
+  color: hsl(238, 29%, 16%);
+  font-weight: 700;
+  margin-bottom: 2%;
+}
+
+.accordion-input:checked ~ label {
+  border-bottom-style: none;
+  padding-bottom: 0;
+}
